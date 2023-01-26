@@ -1,1 +1,1 @@
-# PINNBurger
+# PINN
