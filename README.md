@@ -4,7 +4,7 @@ This repository contains Jupyter Notebook files that implement physics-informed 
 
 ## Contents
 
-- pinn_burgers.ipynb: This notebook demonstrates how to use a PINN to solve the Burgers' equation, a nonlinear partial differential equation that arises in fluid mechanics. The notebook includes a step-by-step walkthrough of the code, along with explanations of key concepts.
+- pinn_burgers.ipynb: This notebook demonstrates how to use a PINN to solve the Burgers' equation, a nonlinear partial differential equation that arises in fluid mechanics. The notebook includes a step-by-step walkthrough of the code, along with some explanations.
 
 - pinn_stokes.ipynb: This notebook demonstrates how to use a PINN to solve the Stokes equation, which describes the flow of viscous fluids. Note that the code for this example is incomplete and currently has a problem with the L_BFGS_B optimizer that has not yet been resolved.
 
