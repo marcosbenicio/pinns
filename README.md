@@ -28,12 +28,16 @@ The goal is to train a physics-informed neural network (PINN) to approximate the
 
 **2D Colormap of u(x, t)**
 
+
 <img src="Images/2d_plot_burger.png">
+
+
 This 2D colormap visualizes the evolution of the dependent variable $u(x, t)$ over time (x-axis) and space (y-axis). The color intensity represents the magnitude of $u(x, t)$, with different colors illustrating different magnitudes.
 
 **3D Surface of u(x, t)**
 
 <img src="Images/3d_plot_burger.png">
+
 
 The 3D surface plot provides a different perspective of the solution $u(x, t)$, where the z-axis represents the magnitude of $u(x, t)$. The surface plot allows for better visualization of the behavior of the dependent variable throughout the spatial and temporal domain, offering a more comprehensive understanding of the Burgers' equation solution.
 
