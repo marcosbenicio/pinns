@@ -6,6 +6,24 @@ This repository contains Jupyter Notebook files that implement physics-informed 
 
 - pinn_burgers.ipynb: This notebook demonstrates how to use a PINN to solve the Burgers' equation, a nonlinear partial differential equation that arises in fluid mechanics. The notebook includes a step-by-step walkthrough of the code, along with some explanations.
 
+The Burgers' equation is a fundamental partial differential equation (PDE) that arises in various areas of applied mathematics, such as fluid mechanics, nonlinear acoustics, and gas dynamics. The equation describes the evolution of a scalar field (like velocity, temperature, or density) that experiences both nonlinear convection and diffusion.
+
+In its one-dimensional, unsteady, and inviscid form, the Burgers' equation is given by:
+
+$$\frac{\partial u}{\partial t} + u \frac{\partial u}{\partial x} = \nu \frac{\partial^2 u}{\partial x^2}$$
+
+Here, u(x, t) is the dependent variable (e.g., velocity), x is the spatial variable, t is the time variable, and ν is the kinematic viscosity coefficient. The first term on the left-hand side represents the time evolution, the second term represents the nonlinear convection, and the term on the right-hand side represents the diffusion or dissipation.
+
+In the specific case considered in the provided code, the Burgers' equation is solved with the following conditions:
+
+- **Domain**: The spatial domain is $x \in [1,-1]$, and the time domain is $t \in [0,1]$, the problem is being solved within this rectangular domain.
+- **Initial Condition**: $u(0, x) = -\sin(\pi x)$ where $ x \in [-1, 1]$. This describes the initial state of the dependent variable $u(x, t)$ at time $t = 0$.
+- **Boundary conditions**:u(t, -1) = u(t, 1) = 0, where $t \in [0,1]$. These conditions enforce that the dependent variable $u(x, t)$ is equal to zero at the boundaries $x = -1$ and $x = 1$ for all times t.
+
+
+
+The goal is to train a physics-informed neural network (PINN) to approximate the solution $u(x, t)$ of the Burgers' equation under these conditions. The PINN is trained to minimize the residuals of the PDE, initial conditions, and boundary conditions by using randomly sampled points within the domain and points satisfying the initial and boundary conditions.
+
 - pinn_stokes.ipynb: This notebook demonstrates how to use a PINN to solve the Stokes equation, which describes the flow of viscous fluids. Note that the code for this example is incomplete and currently has a problem with the L_BFGS_B optimizer that has not yet been resolved.
 
 ## References
