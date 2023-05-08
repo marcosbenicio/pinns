@@ -30,6 +30,4 @@ The goal is to train a physics-informed neural network (PINN) to approximate the
 - pinn_stokes.ipynb: This notebook demonstrates how to use a PINN to solve the Stokes equation, which describes the flow of viscous fluids. Note that the code for this example is incomplete and currently has a problem with the L_BFGS_B optimizer that has not yet been resolved.
 
 ## References
-The examples in this repository are based on the following paper:
-
-Raissi, M., Perdikaris, P., & Karniadakis, G. E. (2019). Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations. Journal of Computational Physics, 378, 686-707. doi:10.1016/j.jcp.2018.10.045
+1. Raissi, M., Perdikaris, P., & Karniadakis, G. E. (2019). Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations. Journal of Computational Physics, 378, 686-707. doi:10.1016/j.jcp.2018.10.045
