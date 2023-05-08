@@ -19,11 +19,23 @@ This repository contains Jupyter Notebook files that implement physics-informed 
   In the specific case considered in the provided code, the Burgers' equation is solved with the following conditions:
 
   - **Domain**: The spatial domain is $x \in [1,-1]$, and the time domain is $t \in [0,1]$, the problem is being solved within this rectangular domain.
-  - **Initial Condition**: $u(0, x) = -\sin(\pi x)$ where $ x \in [-1, 1]$. This describes the initial state of the dependent variable $u(x, t)$ at time $t = 0$.
+  - **Initial Condition**: $u(0, x) = -\sin(\pi x)$ where $x \in [-1, 1]$. This describes the initial state of the dependent variable $u(x, t)$ at time $t = 0$.
   - **Boundary conditions**:u(t, -1) = u(t, 1) = 0, where $t \in [0,1]$. These conditions enforce that the dependent variable $u(x, t)$ is equal to zero at the boundaries $x = -1$ and $x = 1$ for all times t.
-
-
+ 
 The goal is to train a physics-informed neural network (PINN) to approximate the solution $u(x, t)$ of the Burgers' equation under these conditions. The PINN is trained to minimize the residuals of the PDE, initial conditions, and boundary conditions by using randomly sampled points within the domain and points satisfying the initial and boundary conditions.
+
+### Results
+
+**2D Colormap of u(x, t)**
+
+<img src="Image/2d_plot_burger.png">
+This 2D colormap visualizes the evolution of the dependent variable $u(x, t)$ over time (x-axis) and space (y-axis). The color intensity represents the magnitude of $u(x, t)$, with different colors illustrating different magnitudes.
+
+**3D Surface of u(x, t)**
+
+<img src="Image/3d_plot_burger.png">
+
+The 3D surface plot provides a different perspective of the solution $u(x, t)$, where the z-axis represents the magnitude of $u(x, t)$. The surface plot allows for better visualization of the behavior of the dependent variable throughout the spatial and temporal domain, offering a more comprehensive understanding of the Burgers' equation solution.
 
 ## pinn_stokes.ipynb (Incomplete)
 
