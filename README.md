@@ -4,7 +4,7 @@ This repository contains Jupyter Notebook files that implement physics-informed 
 
 ## pinn_burgers.ipynb
 
-- pinn_burgers.ipynb: This notebook showcases the use of a Physics-Informed Neural Network (PINN) to solve the Burgers' equation, a nonlinear partial differential equation often found in fluid mechanics. The notebook offers a comprehensive, step-by-step guide to the code implementation. To promote flexibility and ease of understanding, I have made an effort to design the code using a modular approach, which facilitates seamless adaptation to other problems.
+- pinn_burgers.ipynb: This notebook show the use of a Physics-Informed Neural Network (PINN) to solve the Burgers' equation, a nonlinear partial differential equation often found in fluid mechanics. The notebook offers a comprehensive, step-by-step guide to the code implementation. To promote flexibility and ease of understanding, I have made an effort to design the code using a modular approach, which facilitates seamless adaptation to other problems.
 
   **PINN: One-Dimensional Burger Equation**
   
