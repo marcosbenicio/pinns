@@ -1,4 +1,4 @@
-# Physical Informed Neural Network (PINN)
+# Physics Informed Neural Network (PINN)
 
 This repository contains Jupyter Notebook files that implement physics-informed neural networks (PINNs) using TensorFlow library. The examples in this repository are based on the paper "Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations" by M. Raissi et al. (2019).
 
