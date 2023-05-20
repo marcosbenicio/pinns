@@ -1,10 +1,10 @@
-# Physical Informed Neural Network (PINN)
+# Physics Informed Neural Network (PINN)
 
 This repository contains Jupyter Notebook files that implement physics-informed neural networks (PINNs) using TensorFlow library. The examples in this repository are based on the paper "Physics-informed neural networks: A deep learning framework for solving forward and inverse problems involving nonlinear partial differential equations" by M. Raissi et al. (2019).
 
 ## pinn_burgers.ipynb
 
-- pinn_burgers.ipynb: This notebook showcases the use of a Physics-Informed Neural Network (PINN) to solve the Burgers' equation, a nonlinear partial differential equation often found in fluid mechanics. The notebook offers a comprehensive, step-by-step guide to the code implementation. To promote flexibility and ease of understanding, I have made an effort to design the code using a modular approach, which facilitates seamless adaptation to other problems.
+- pinn_burgers.ipynb: This notebook show the use of a Physics-Informed Neural Network (PINN) to solve the Burgers' equation, a nonlinear partial differential equation often found in fluid mechanics. The notebook offers a comprehensive, step-by-step guide to the code implementation. To promote flexibility and ease of understanding, I have made an effort to design the code using a modular approach, which facilitates seamless adaptation to other problems.
 
   **PINN: One-Dimensional Burger Equation**
   
@@ -28,12 +28,16 @@ The goal is to train a physics-informed neural network (PINN) to approximate the
 
 **2D Colormap of u(x, t)**
 
-<img src="Image/2d_plot_burger.png">
+
+<img src="Images/2d_plot_burger.png">
+
+
 This 2D colormap visualizes the evolution of the dependent variable $u(x, t)$ over time (x-axis) and space (y-axis). The color intensity represents the magnitude of $u(x, t)$, with different colors illustrating different magnitudes.
 
 **3D Surface of u(x, t)**
 
-<img src="Image/3d_plot_burger.png">
+<img src="Images/3d_plot_burger.png">
+
 
 The 3D surface plot provides a different perspective of the solution $u(x, t)$, where the z-axis represents the magnitude of $u(x, t)$. The surface plot allows for better visualization of the behavior of the dependent variable throughout the spatial and temporal domain, offering a more comprehensive understanding of the Burgers' equation solution.
 
